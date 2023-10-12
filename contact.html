@@ -18,7 +18,24 @@
           integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
           crossorigin="anonymous"></script>
 
-     <title>iPort | About Us</title>
+     <style>
+          .map-responsive {
+               overflow: hidden;
+               padding-bottom: 56.25%;
+               position: relative;
+               height: 0;
+          }
+
+          .map-responsive iframe {
+               left: 0;
+               top: 0;
+               height: 100%;
+               width: 100%;
+               position: absolute;
+          }
+     </style>
+
+     <title>iPort | Contact Us</title>
 </head>
 
 <body>
@@ -37,7 +54,7 @@
                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                          <li class="nav-item "><a class="nav-link" href="/IPort/index.html">Home </a></li>
-                         <li class="nav-item active"><a class="nav-link" href="/IPort/about.html">About Us</a></li>
+                         <li class="nav-item "><a class="nav-link" href="/IPort/about.html">About Us</a></li>
                          <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,8 +68,7 @@
                                    <div class="dropdown-divider"></div>
                                    <a class="dropdown-item" href="#">Support</a>
                               </div>
-                         </li>
-                         <li class="nav-item"><a class="nav-link" href="/IPort/contact.html">Contact Us</a></li>
+                         <li class="nav-item active"><a class="nav-link" href="/IPort/contact.html">Contact Us</a></li>
                     </ul>
                     <div class="mx-3">
                          <button type="submit" class="btn btn-outline-success mx-2" data-toggle="modal"
@@ -90,7 +106,7 @@
                                    <div class="form-group">
                                         <input type="submit" value="Login" class="btn btn-success ">
                                    </div>
-                                   Don't Have an Account?  <a href="#">Sign Up</a>
+                                   Don't Have an Account? <a href="#">Sign Up</a></a>
                               </form>
                               <!--Form Ends Here-->
                          </div>
@@ -152,49 +168,85 @@
           </div>
      </div>
 
-     <!-- Featurette -->
+     <!-- Contact Form -->
      <div class="container mt-5">
-          <div class="row featurette d-flex justify-content-center align-items-center">
-               <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Front End Development. <span
-                              class="text-body-secondary">It’ll blow your mind.</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam sunt eaque ratione, quidem quasi cupiditate omnis dolor cumque nobis, voluptatum aut at nostrum esse, distinctio quas corporis eligendi pariatur? Incidunt sint numquam enim, porro vitae voluptate illum voluptates veritatis minus et harum deleniti tempore rem iure laudantium ipsa voluptas.</p>
+          <div class="row">
+               <div class="col-md-6">
+                    <h1>Contact Us</h1>
+                    <i class="text-muted">Please fill in this form to Contact Us.</i> <br><br>
+                    <!--Form Starts Here-->
+                    <form>
+                         <!--1st Row Starts Here-->
+                         <div class="row">
+                              <div class="col-md-4">
+                                   <div class="form-group">
+                                        <label>NAME *</label>
+                                        <input type="text" class="form-control" Required>
+                                   </div>
+                              </div>
+                              <div class="col-md-4">
+                                   <div class="form-group">
+                                        <label>E-MAIL *</label>
+                                        <input type="email" class="form-control" Required>
+                                   </div>
+                              </div>
+                              <div class="col-md-4">
+                                   <div class="form-group">
+                                        <label>PHONE *</label>
+                                        <input type="number" class="form-control" Required>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--1st Row Ends Here-->
+                         <!--2nd Row Starts Here-->
+                         <div class="row">
+                              <div class="col-md-7">
+                                   <div class="form-group">
+                                        <label>Select Your Query *</label>
+                                        <Select class="form-control" required>
+                                             <option>--Select Any--</option>
+                                             <option>Web Development</option>
+                                             <option>Front End Development</option>
+                                             <option>Back End Development</option>
+                                             <option>Full Stack Development</option> >
+                                        </Select>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--2nd Row Ends Here-->
+                         <!--3rd Row Starts Here-->
+                         <div class="row">
+                              <div class="col">
+                                   <div class="form-group">
+                                        <label>Tell Us Your Concern</label>
+                                        <textarea cols="20" rows="6" class="form-control">
+                          </textarea>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--3nd Row Ends Here-->
+                         <div class="form-group">
+                              <input type="submit" value="Submit" class=" btn btn-primary">
+                         </div>
+                    </form>
+                    <!--Form Ends Here-->
                </div>
-               <div class="col-md-5">
-                    <img class="img-fluid" src="https://source.unsplash.com/500x500/?technology,frontend" alt="">
+               <div class="col-md-6 map-responsive">
+                    <iframe
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.191706113456!2d77.70056021526979!3d12.95958151864736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13d4180b1d5b%3A0x5569acd61ddc1825!2sKalamandir%20-%20Marathahalli%20aswath%20nagar%2010th%20cross!5e0!3m2!1sen!2sin!4v1670600682593!5m2!1sen!2sin"
+                         width="600" height="450" allowfullscreen="" loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                </div>
           </div>
-          <hr class="featurette-divider">
-
-          <div class="row featurette featurette d-flex justify-content-center align-items-center">
-               <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">Back End Development. <span
-                              class="text-body-secondary">See for yourself.</span></h2>
-                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint est id qui optio recusandae laudantium quisquam. Autem tempora nostrum quae adipisci omnis mollitia suscipit incidunt cum modi! Dolorum similique nihil reiciendis eos ea placeat totam optio rerum minus minima aut ipsum quasi, iste ex, illo sint culpa fugit, harum perspiciatis.</p>
-               </div>
-               <div class="col-md-5 order-md-1">
-                    <img class="img-fluid" src="https://source.unsplash.com/500x500/?technology,backend" alt="">
-               </div>
-          </div>
-          <hr class="featurette-divider">
-
-          <div class="row featurette featurette d-flex justify-content-center align-items-center">
-               <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Full Stact Development. <span
-                              class="text-body-secondary">Checkmate.</span></h2>
-                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos rerum non ducimus veniam saepe laborum? Cumque dignissimos totam error rerum ab rem nobis ipsam sint itaque quisquam consequatur labore enim nostrum possimus vitae facere perspiciatis voluptates mollitia odio libero, nihil quaerat obcaecati! Perferendis quia sunt suscipit autem libero! Quod, repellat.</p>
-               </div>
-               <div class="col-md-5">
-                    <img class="img-fluid" src="https://source.unsplash.com/500x500/?technology,fullstack" alt="">
-               </div>
-          </div>          
      </div>
-     <hr class="featurette-divider">
-     <!-- Footer -->
-     <footer class="container "  >
-          <p class="float-right"><a href="#">Back to top</a></p>
-          <p>© 2020-2021 iPort, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-     </footer>
-
 </body>
+<hr>
+
+<!-- Footer -->
+<footer class="container">
+     <p class="float-right"><a href="#">Back to top</a></p>
+     <p>© 2020-2021 iPort, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+</body>
+
 </html>
